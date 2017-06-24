@@ -1,1 +1,13 @@
 /* CSS declarations go here */
+.flip-horizontal, .x-grid-cell-inner, .x-column-header-text, .x-panel-header-text {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+.x-column-header-text, .x-panel-header-text {
+    display: inline-block;
+}
